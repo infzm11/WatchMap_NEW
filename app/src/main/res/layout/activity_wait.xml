@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.android.hoinnet.highde.view.CircleImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_wait_bg" app:border_color="@color/black" app:border_width="-0.1dp"/>
+    <ImageView android:id="@+id/init_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/progress" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/net_tip_linearly" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="23sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_no" android:layout_centerInParent="true"/>
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/tip_net_settings" android:layout_centerInParent="true"/>
+    </LinearLayout>
+</RelativeLayout>

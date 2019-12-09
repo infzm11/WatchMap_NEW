@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_bg_circleimageview" />
+
+    <TextView
+        android:id="@+id/tv_enter_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/enter_destination"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp30" />
+
+    <LinearLayout
+        android:id="@+id/input_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp48"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/recipientedittextview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/input_destination"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorBackground"
+            android:textSize="@dimen/sp28" />
+
+        <ImageView
+            android:id="@+id/input_going_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingTop="@dimen/dp4"
+            android:paddingRight="@dimen/dp4"
+            android:src="@drawable/ic_going_selector" />
+    </LinearLayout>
+
+    <com.android.hoinnet.highde.view.LeftRightButton
+        android:id="@+id/input_leftrightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:leftRightType="?attr/leftRightType"
+        app:leftBackground="@drawable/selctor_oncilck_left"
+        app:leftImgSrc="@mipmap/ic_message_voice"
+        app:rightBackground="@drawable/selctor_oncilck_right"
+        app:rightImgSrc="@mipmap/ic_message_keyboard" />
+</RelativeLayout>

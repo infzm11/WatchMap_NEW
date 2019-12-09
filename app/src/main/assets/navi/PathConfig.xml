@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <dirs>
+        <data>.\data\</data>
+        <diff>.\data\</diff>
+        <res>.\res\</res>
+        <log>/storage/emulated/0/AmapSdk/</log>
+    </dirs>
+</config>

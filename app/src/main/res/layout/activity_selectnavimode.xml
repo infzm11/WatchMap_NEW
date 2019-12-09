@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_bg_circleimageview"/>
+    <TextView android:textSize="@dimen/sp28" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp48" android:text="@string/dialog_title" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/dp60" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_walk" android:paddingLeft="@dimen/dp48" android:paddingTop="@dimen/dp10" android:paddingRight="@dimen/dp48" android:paddingBottom="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_walk"/>
+            <View android:background="@color/black_high" android:layout_width="@dimen/dp48" android:layout_height="1dp"/>
+            <TextView android:textSize="@dimen/sp28" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/walk"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_ride" android:paddingLeft="@dimen/dp48" android:paddingTop="@dimen/dp10" android:paddingRight="@dimen/dp48" android:paddingBottom="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_ride"/>
+            <View android:background="@color/black_high" android:layout_width="@dimen/dp48" android:layout_height="1dp"/>
+            <TextView android:textSize="@dimen/sp28" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ride"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_drive" android:paddingLeft="@dimen/dp48" android:paddingTop="@dimen/dp10" android:paddingRight="@dimen/dp48" android:paddingBottom="@dimen/dp10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_drive"/>
+            <View android:background="@color/black_high" android:layout_width="@dimen/dp48" android:layout_height="1dp"/>
+            <TextView android:textSize="@dimen/sp28" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drive"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

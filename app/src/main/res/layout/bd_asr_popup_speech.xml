@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bd_asr_popup_bg">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selctor_voice"
+            android:visibility="gone" />
+
+        <com.carlos.voiceline.mylibrary.VoiceLineView
+            android:id="@+id/voicLine"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            app:fineness="?attr/fineness"
+            app:lineSpeed="90"
+            app:maxVolume="10"
+            app:middleLine="@android:color/black"
+            app:middleLineHeight="1dp"
+            app:rectInitHeight="0dp"
+            app:rectSpace="1dp"
+            app:rectWidth="5dp"
+            app:sensibility="?attr/sensibility"
+            app:viewMode="?attr/viewMode"
+            app:voiceLine="@android:color/holo_green_dark" />
+    </RelativeLayout>
+</RelativeLayout>

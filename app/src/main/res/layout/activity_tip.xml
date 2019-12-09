@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_bg_circleimageview"/>
+    <TextView android:textSize="@dimen/dp25" android:textColor="@color/white" android:id="@+id/tip_tv" android:paddingLeft="@dimen/dp40" android:paddingTop="@dimen/dp60" android:paddingRight="@dimen/dp40" android:paddingBottom="@dimen/dp10" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/str_network_perdes" android:layout_above="@+id/llayout_agree"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llayout_agree" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:gravity="right" android:id="@+id/llayout_no" android:background="@drawable/selctor_oncilck_left" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/tv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp15" android:src="@mipmap/ic_clear_white_48dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="left" android:id="@+id/llayout_yes" android:background="@drawable/selctor_oncilck_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp15" android:src="@mipmap/ic_check_white_48dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
